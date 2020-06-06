@@ -11,7 +11,14 @@
 <button onclick="myFunction()">Click me</button>
 
 <p id="demo"></p>
-
+  
+<script>
+WebAssembly.instantiateStreaming(fetch('simple.wasm'), importObject)
+.then(results => {
+  // Do something with the results!
+});
+</script>
+  
 <script>
 function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
