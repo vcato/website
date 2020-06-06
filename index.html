@@ -19,7 +19,7 @@ function importObject() {
 WebAssembly.instantiateStreaming(fetch('simple.wasm'), importObject)
 .then(results => {
   // Do something with the results!
-  x = results.instance.exports.exported_func();
+  x = results.instance.exports.main();
 
   console.log('x='+x);
 });
