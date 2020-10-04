@@ -1766,7 +1766,7 @@ function _emscripten_asm_const_ii(code, a0) {
 
 STATIC_BASE = GLOBAL_BASE;
 
-STATICTOP = STATIC_BASE + 37392;
+STATICTOP = STATIC_BASE + 37360;
 /* global initializers */  __ATINIT__.push({ func: function() { __GLOBAL__I_000101() } }, { func: function() { __GLOBAL__sub_I_MyApplication_cpp() } }, { func: function() { ___emscripten_environ_constructor() } }, { func: function() { __GLOBAL__sub_I_iostream_cpp() } });
 
 
@@ -1775,7 +1775,7 @@ STATICTOP = STATIC_BASE + 37392;
 
 
 
-var STATIC_BUMP = 37392;
+var STATIC_BUMP = 37360;
 Module["STATIC_BASE"] = STATIC_BASE;
 Module["STATIC_BUMP"] = STATIC_BUMP;
 
